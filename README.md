@@ -1,2 +1,2 @@
-*OGTrain
-Welcome to our git repo
+#OGTrain
+Welcome to our git repo for our iPhone App.
