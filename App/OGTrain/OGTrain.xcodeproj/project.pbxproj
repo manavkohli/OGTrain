@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC40BF741BACADFA009C38FA /* ListResultsViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC40BF731BACADFA009C38FA /* ListResultsViewControllerTableViewController.m */; };
 		CCF4EB9C1BA0EF9F00C7C053 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF4EB9B1BA0EF9F00C7C053 /* main.m */; };
 		CCF4EB9F1BA0EF9F00C7C053 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF4EB9E1BA0EF9F00C7C053 /* AppDelegate.m */; };
 		CCF4EBA21BA0EF9F00C7C053 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF4EBA11BA0EF9F00C7C053 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC40BF721BACADFA009C38FA /* ListResultsViewControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListResultsViewControllerTableViewController.h; sourceTree = "<group>"; };
+		CC40BF731BACADFA009C38FA /* ListResultsViewControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListResultsViewControllerTableViewController.m; sourceTree = "<group>"; };
 		CCF4EB961BA0EF9F00C7C053 /* OGTrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OGTrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCF4EB9A1BA0EF9F00C7C053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCF4EB9B1BA0EF9F00C7C053 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				CCF4EB9E1BA0EF9F00C7C053 /* AppDelegate.m */,
 				CCF4EBA01BA0EF9F00C7C053 /* ViewController.h */,
 				CCF4EBA11BA0EF9F00C7C053 /* ViewController.m */,
+				CC40BF721BACADFA009C38FA /* ListResultsViewControllerTableViewController.h */,
+				CC40BF731BACADFA009C38FA /* ListResultsViewControllerTableViewController.m */,
 				CCF4EBA31BA0EF9F00C7C053 /* Main.storyboard */,
 				CCF4EBA61BA0EF9F00C7C053 /* Images.xcassets */,
 				CCF4EBA81BA0EF9F00C7C053 /* LaunchScreen.xib */,
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCF4EBA21BA0EF9F00C7C053 /* ViewController.m in Sources */,
+				CC40BF741BACADFA009C38FA /* ListResultsViewControllerTableViewController.m in Sources */,
 				CCF4EB9F1BA0EF9F00C7C053 /* AppDelegate.m in Sources */,
 				CCF4EB9C1BA0EF9F00C7C053 /* main.m in Sources */,
 			);
