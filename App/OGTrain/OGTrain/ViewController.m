@@ -10,6 +10,11 @@
 
 @interface ViewController ()
 
+//MARK: Properties
+@property (weak, nonatomic) IBOutlet UILabel *trainStopLabel;
+
+@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
+
 @end
 
 @implementation ViewController
@@ -23,5 +28,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+//MARK: Actions
+
 
 @end
