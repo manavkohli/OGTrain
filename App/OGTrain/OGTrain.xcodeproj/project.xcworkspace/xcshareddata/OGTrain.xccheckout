@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B8CA6FE6-CB6C-4366-8DD7-2A1D58ADCF9C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>OGTrain</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E5976F53BDA38C8F2EF528997307A24AB7F85328</key>
+		<string>https://github.com/manavkohli/OGTrain.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>App/OGTrain/OGTrain.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E5976F53BDA38C8F2EF528997307A24AB7F85328</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/manavkohli/OGTrain.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E5976F53BDA38C8F2EF528997307A24AB7F85328</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E5976F53BDA38C8F2EF528997307A24AB7F85328</string>
+			<key>IDESourceControlWCCName</key>
+			<string>OGTrain</string>
+		</dict>
+	</array>
+</dict>
+</plist>
