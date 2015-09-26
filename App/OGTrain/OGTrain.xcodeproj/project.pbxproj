@@ -8,10 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		CC40BF741BACADFA009C38FA /* ListResultsViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC40BF731BACADFA009C38FA /* ListResultsViewControllerTableViewController.m */; };
+		CC62908B1BAF4E5E0016D6B5 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC62908A1BAF4E5E0016D6B5 /* Storyboard.storyboard */; };
+		CC6290C91BAF5DF10016D6B5 /* NSURLRequest+OAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = CC62909D1BAF5DF10016D6B5 /* NSURLRequest+OAuth.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CC6290CA1BAF5DF10016D6B5 /* NSMutableURLRequest+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6290A11BAF5DF10016D6B5 /* NSMutableURLRequest+Parameters.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CC6290CB1BAF5DF10016D6B5 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6290A31BAF5DF10016D6B5 /* NSString+URLEncoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CC6290CC1BAF5DF10016D6B5 /* NSURL+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6290A51BAF5DF10016D6B5 /* NSURL+Base.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CC6290CD1BAF5DF10016D6B5 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CC6290A71BAF5DF10016D6B5 /* Base64Transcoder.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CC6290CE1BAF5DF10016D6B5 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = CC6290A91BAF5DF10016D6B5 /* hmac.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CC6290CF1BAF5DF10016D6B5 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = CC6290AB1BAF5DF10016D6B5 /* sha1.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CC6290D01BAF5DF10016D6B5 /* OACall.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6290AE1BAF5DF10016D6B5 /* OACall.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CC6290D11BAF5DF10016D6B5 /* OAConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6290B01BAF5DF10016D6B5 /* OAConsumer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CC6290D21BAF5DF10016D6B5 /* OADataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6290B21BAF5DF10016D6B5 /* OADataFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CC6290D31BAF5DF10016D6B5 /* OAHMAC_SHA1SignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6290B41BAF5DF10016D6B5 /* OAHMAC_SHA1SignatureProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CC6290D41BAF5DF10016D6B5 /* OAMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6290B61BAF5DF10016D6B5 /* OAMutableURLRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CC6290D51BAF5DF10016D6B5 /* OAPlaintextSignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6290B81BAF5DF10016D6B5 /* OAPlaintextSignatureProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CC6290D61BAF5DF10016D6B5 /* OAProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6290BA1BAF5DF10016D6B5 /* OAProblem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CC6290D71BAF5DF10016D6B5 /* OARequestParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6290BC1BAF5DF10016D6B5 /* OARequestParameter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CC6290D81BAF5DF10016D6B5 /* OAServiceTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6290BE1BAF5DF10016D6B5 /* OAServiceTicket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CC6290D91BAF5DF10016D6B5 /* OAToken.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6290C11BAF5DF10016D6B5 /* OAToken.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CC6290DA1BAF5DF10016D6B5 /* OATokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6290C31BAF5DF10016D6B5 /* OATokenManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CC6290DB1BAF5DF10016D6B5 /* YPAPISample.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6290C71BAF5DF10016D6B5 /* YPAPISample.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CCF4EB9C1BA0EF9F00C7C053 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF4EB9B1BA0EF9F00C7C053 /* main.m */; };
 		CCF4EB9F1BA0EF9F00C7C053 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF4EB9E1BA0EF9F00C7C053 /* AppDelegate.m */; };
-		CCF4EBA21BA0EF9F00C7C053 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF4EBA11BA0EF9F00C7C053 /* ViewController.m */; };
-		CCF4EBA51BA0EF9F00C7C053 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF4EBA31BA0EF9F00C7C053 /* Main.storyboard */; };
 		CCF4EBA71BA0EF9F00C7C053 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF4EBA61BA0EF9F00C7C053 /* Images.xcassets */; };
 		CCF4EBAA1BA0EF9F00C7C053 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCF4EBA81BA0EF9F00C7C053 /* LaunchScreen.xib */; };
 		CCF4EBB61BA0EF9F00C7C053 /* OGTrainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF4EBB51BA0EF9F00C7C053 /* OGTrainTests.m */; };
@@ -30,14 +48,53 @@
 /* Begin PBXFileReference section */
 		CC40BF721BACADFA009C38FA /* ListResultsViewControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListResultsViewControllerTableViewController.h; sourceTree = "<group>"; };
 		CC40BF731BACADFA009C38FA /* ListResultsViewControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListResultsViewControllerTableViewController.m; sourceTree = "<group>"; };
+		CC62908A1BAF4E5E0016D6B5 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		CC62909C1BAF5DF10016D6B5 /* NSURLRequest+OAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+OAuth.h"; sourceTree = "<group>"; };
+		CC62909D1BAF5DF10016D6B5 /* NSURLRequest+OAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+OAuth.m"; sourceTree = "<group>"; };
+		CC6290A01BAF5DF10016D6B5 /* NSMutableURLRequest+Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+Parameters.h"; sourceTree = "<group>"; };
+		CC6290A11BAF5DF10016D6B5 /* NSMutableURLRequest+Parameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+Parameters.m"; sourceTree = "<group>"; };
+		CC6290A21BAF5DF10016D6B5 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		CC6290A31BAF5DF10016D6B5 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		CC6290A41BAF5DF10016D6B5 /* NSURL+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Base.h"; sourceTree = "<group>"; };
+		CC6290A51BAF5DF10016D6B5 /* NSURL+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Base.m"; sourceTree = "<group>"; };
+		CC6290A71BAF5DF10016D6B5 /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64Transcoder.c; sourceTree = "<group>"; };
+		CC6290A81BAF5DF10016D6B5 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
+		CC6290A91BAF5DF10016D6B5 /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		CC6290AA1BAF5DF10016D6B5 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		CC6290AB1BAF5DF10016D6B5 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		CC6290AC1BAF5DF10016D6B5 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		CC6290AD1BAF5DF10016D6B5 /* OACall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OACall.h; sourceTree = "<group>"; };
+		CC6290AE1BAF5DF10016D6B5 /* OACall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OACall.m; sourceTree = "<group>"; };
+		CC6290AF1BAF5DF10016D6B5 /* OAConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAConsumer.h; sourceTree = "<group>"; };
+		CC6290B01BAF5DF10016D6B5 /* OAConsumer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAConsumer.m; sourceTree = "<group>"; };
+		CC6290B11BAF5DF10016D6B5 /* OADataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OADataFetcher.h; sourceTree = "<group>"; };
+		CC6290B21BAF5DF10016D6B5 /* OADataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OADataFetcher.m; sourceTree = "<group>"; };
+		CC6290B31BAF5DF10016D6B5 /* OAHMAC_SHA1SignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAHMAC_SHA1SignatureProvider.h; sourceTree = "<group>"; };
+		CC6290B41BAF5DF10016D6B5 /* OAHMAC_SHA1SignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAHMAC_SHA1SignatureProvider.m; sourceTree = "<group>"; };
+		CC6290B51BAF5DF10016D6B5 /* OAMutableURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAMutableURLRequest.h; sourceTree = "<group>"; };
+		CC6290B61BAF5DF10016D6B5 /* OAMutableURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAMutableURLRequest.m; sourceTree = "<group>"; };
+		CC6290B71BAF5DF10016D6B5 /* OAPlaintextSignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAPlaintextSignatureProvider.h; sourceTree = "<group>"; };
+		CC6290B81BAF5DF10016D6B5 /* OAPlaintextSignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAPlaintextSignatureProvider.m; sourceTree = "<group>"; };
+		CC6290B91BAF5DF10016D6B5 /* OAProblem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAProblem.h; sourceTree = "<group>"; };
+		CC6290BA1BAF5DF10016D6B5 /* OAProblem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAProblem.m; sourceTree = "<group>"; };
+		CC6290BB1BAF5DF10016D6B5 /* OARequestParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OARequestParameter.h; sourceTree = "<group>"; };
+		CC6290BC1BAF5DF10016D6B5 /* OARequestParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OARequestParameter.m; sourceTree = "<group>"; };
+		CC6290BD1BAF5DF10016D6B5 /* OAServiceTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAServiceTicket.h; sourceTree = "<group>"; };
+		CC6290BE1BAF5DF10016D6B5 /* OAServiceTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAServiceTicket.m; sourceTree = "<group>"; };
+		CC6290BF1BAF5DF10016D6B5 /* OASignatureProviding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OASignatureProviding.h; sourceTree = "<group>"; };
+		CC6290C01BAF5DF10016D6B5 /* OAToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAToken.h; sourceTree = "<group>"; };
+		CC6290C11BAF5DF10016D6B5 /* OAToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAToken.m; sourceTree = "<group>"; };
+		CC6290C21BAF5DF10016D6B5 /* OATokenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OATokenManager.h; sourceTree = "<group>"; };
+		CC6290C31BAF5DF10016D6B5 /* OATokenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OATokenManager.m; sourceTree = "<group>"; };
+		CC6290C41BAF5DF10016D6B5 /* OAuthConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthConsumer.h; sourceTree = "<group>"; };
+		CC6290C51BAF5DF10016D6B5 /* YelpAPISample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YelpAPISample-Prefix.pch"; sourceTree = "<group>"; };
+		CC6290C61BAF5DF10016D6B5 /* YPAPISample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPAPISample.h; sourceTree = "<group>"; };
+		CC6290C71BAF5DF10016D6B5 /* YPAPISample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPAPISample.m; sourceTree = "<group>"; };
 		CCF4EB961BA0EF9F00C7C053 /* OGTrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OGTrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCF4EB9A1BA0EF9F00C7C053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCF4EB9B1BA0EF9F00C7C053 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CCF4EB9D1BA0EF9F00C7C053 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CCF4EB9E1BA0EF9F00C7C053 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CCF4EBA01BA0EF9F00C7C053 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CCF4EBA11BA0EF9F00C7C053 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CCF4EBA41BA0EF9F00C7C053 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCF4EBA61BA0EF9F00C7C053 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CCF4EBA91BA0EF9F00C7C053 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CCF4EBAF1BA0EF9F00C7C053 /* OGTrainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OGTrainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +120,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC62909A1BAF5DF10016D6B5 /* YelpAPISample */ = {
+			isa = PBXGroup;
+			children = (
+				CC62909C1BAF5DF10016D6B5 /* NSURLRequest+OAuth.h */,
+				CC62909D1BAF5DF10016D6B5 /* NSURLRequest+OAuth.m */,
+				CC62909E1BAF5DF10016D6B5 /* OAuthConsumer */,
+				CC6290C51BAF5DF10016D6B5 /* YelpAPISample-Prefix.pch */,
+				CC6290C61BAF5DF10016D6B5 /* YPAPISample.h */,
+				CC6290C71BAF5DF10016D6B5 /* YPAPISample.m */,
+			);
+			path = YelpAPISample;
+			sourceTree = "<group>";
+		};
+		CC62909E1BAF5DF10016D6B5 /* OAuthConsumer */ = {
+			isa = PBXGroup;
+			children = (
+				CC62909F1BAF5DF10016D6B5 /* Categories */,
+				CC6290A61BAF5DF10016D6B5 /* Crytpo */,
+				CC6290AD1BAF5DF10016D6B5 /* OACall.h */,
+				CC6290AE1BAF5DF10016D6B5 /* OACall.m */,
+				CC6290AF1BAF5DF10016D6B5 /* OAConsumer.h */,
+				CC6290B01BAF5DF10016D6B5 /* OAConsumer.m */,
+				CC6290B11BAF5DF10016D6B5 /* OADataFetcher.h */,
+				CC6290B21BAF5DF10016D6B5 /* OADataFetcher.m */,
+				CC6290B31BAF5DF10016D6B5 /* OAHMAC_SHA1SignatureProvider.h */,
+				CC6290B41BAF5DF10016D6B5 /* OAHMAC_SHA1SignatureProvider.m */,
+				CC6290B51BAF5DF10016D6B5 /* OAMutableURLRequest.h */,
+				CC6290B61BAF5DF10016D6B5 /* OAMutableURLRequest.m */,
+				CC6290B71BAF5DF10016D6B5 /* OAPlaintextSignatureProvider.h */,
+				CC6290B81BAF5DF10016D6B5 /* OAPlaintextSignatureProvider.m */,
+				CC6290B91BAF5DF10016D6B5 /* OAProblem.h */,
+				CC6290BA1BAF5DF10016D6B5 /* OAProblem.m */,
+				CC6290BB1BAF5DF10016D6B5 /* OARequestParameter.h */,
+				CC6290BC1BAF5DF10016D6B5 /* OARequestParameter.m */,
+				CC6290BD1BAF5DF10016D6B5 /* OAServiceTicket.h */,
+				CC6290BE1BAF5DF10016D6B5 /* OAServiceTicket.m */,
+				CC6290BF1BAF5DF10016D6B5 /* OASignatureProviding.h */,
+				CC6290C01BAF5DF10016D6B5 /* OAToken.h */,
+				CC6290C11BAF5DF10016D6B5 /* OAToken.m */,
+				CC6290C21BAF5DF10016D6B5 /* OATokenManager.h */,
+				CC6290C31BAF5DF10016D6B5 /* OATokenManager.m */,
+				CC6290C41BAF5DF10016D6B5 /* OAuthConsumer.h */,
+			);
+			path = OAuthConsumer;
+			sourceTree = "<group>";
+		};
+		CC62909F1BAF5DF10016D6B5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				CC6290A01BAF5DF10016D6B5 /* NSMutableURLRequest+Parameters.h */,
+				CC6290A11BAF5DF10016D6B5 /* NSMutableURLRequest+Parameters.m */,
+				CC6290A21BAF5DF10016D6B5 /* NSString+URLEncoding.h */,
+				CC6290A31BAF5DF10016D6B5 /* NSString+URLEncoding.m */,
+				CC6290A41BAF5DF10016D6B5 /* NSURL+Base.h */,
+				CC6290A51BAF5DF10016D6B5 /* NSURL+Base.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		CC6290A61BAF5DF10016D6B5 /* Crytpo */ = {
+			isa = PBXGroup;
+			children = (
+				CC6290A71BAF5DF10016D6B5 /* Base64Transcoder.c */,
+				CC6290A81BAF5DF10016D6B5 /* Base64Transcoder.h */,
+				CC6290A91BAF5DF10016D6B5 /* hmac.c */,
+				CC6290AA1BAF5DF10016D6B5 /* hmac.h */,
+				CC6290AB1BAF5DF10016D6B5 /* sha1.c */,
+				CC6290AC1BAF5DF10016D6B5 /* sha1.h */,
+			);
+			path = Crytpo;
+			sourceTree = "<group>";
+		};
 		CCF4EB8D1BA0EF9F00C7C053 = {
 			isa = PBXGroup;
 			children = (
@@ -84,13 +213,12 @@
 		CCF4EB981BA0EF9F00C7C053 /* OGTrain */ = {
 			isa = PBXGroup;
 			children = (
+				CC62909A1BAF5DF10016D6B5 /* YelpAPISample */,
 				CCF4EB9D1BA0EF9F00C7C053 /* AppDelegate.h */,
 				CCF4EB9E1BA0EF9F00C7C053 /* AppDelegate.m */,
-				CCF4EBA01BA0EF9F00C7C053 /* ViewController.h */,
-				CCF4EBA11BA0EF9F00C7C053 /* ViewController.m */,
 				CC40BF721BACADFA009C38FA /* ListResultsViewControllerTableViewController.h */,
 				CC40BF731BACADFA009C38FA /* ListResultsViewControllerTableViewController.m */,
-				CCF4EBA31BA0EF9F00C7C053 /* Main.storyboard */,
+				CC62908A1BAF4E5E0016D6B5 /* Storyboard.storyboard */,
 				CCF4EBA61BA0EF9F00C7C053 /* Images.xcassets */,
 				CCF4EBA81BA0EF9F00C7C053 /* LaunchScreen.xib */,
 				CCF4EB991BA0EF9F00C7C053 /* Supporting Files */,
@@ -204,9 +332,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCF4EBA51BA0EF9F00C7C053 /* Main.storyboard in Resources */,
 				CCF4EBAA1BA0EF9F00C7C053 /* LaunchScreen.xib in Resources */,
 				CCF4EBA71BA0EF9F00C7C053 /* Images.xcassets in Resources */,
+				CC62908B1BAF4E5E0016D6B5 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,9 +352,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCF4EBA21BA0EF9F00C7C053 /* ViewController.m in Sources */,
+				CC6290CF1BAF5DF10016D6B5 /* sha1.c in Sources */,
+				CC6290D01BAF5DF10016D6B5 /* OACall.m in Sources */,
+				CC6290CC1BAF5DF10016D6B5 /* NSURL+Base.m in Sources */,
+				CC6290DB1BAF5DF10016D6B5 /* YPAPISample.m in Sources */,
+				CC6290DA1BAF5DF10016D6B5 /* OATokenManager.m in Sources */,
+				CC6290D51BAF5DF10016D6B5 /* OAPlaintextSignatureProvider.m in Sources */,
+				CC6290CD1BAF5DF10016D6B5 /* Base64Transcoder.c in Sources */,
+				CC6290D41BAF5DF10016D6B5 /* OAMutableURLRequest.m in Sources */,
 				CC40BF741BACADFA009C38FA /* ListResultsViewControllerTableViewController.m in Sources */,
+				CC6290D71BAF5DF10016D6B5 /* OARequestParameter.m in Sources */,
+				CC6290CE1BAF5DF10016D6B5 /* hmac.c in Sources */,
+				CC6290D91BAF5DF10016D6B5 /* OAToken.m in Sources */,
+				CC6290CA1BAF5DF10016D6B5 /* NSMutableURLRequest+Parameters.m in Sources */,
+				CC6290D81BAF5DF10016D6B5 /* OAServiceTicket.m in Sources */,
+				CC6290D21BAF5DF10016D6B5 /* OADataFetcher.m in Sources */,
+				CC6290D61BAF5DF10016D6B5 /* OAProblem.m in Sources */,
+				CC6290D11BAF5DF10016D6B5 /* OAConsumer.m in Sources */,
+				CC6290D31BAF5DF10016D6B5 /* OAHMAC_SHA1SignatureProvider.m in Sources */,
 				CCF4EB9F1BA0EF9F00C7C053 /* AppDelegate.m in Sources */,
+				CC6290C91BAF5DF10016D6B5 /* NSURLRequest+OAuth.m in Sources */,
+				CC6290CB1BAF5DF10016D6B5 /* NSString+URLEncoding.m in Sources */,
 				CCF4EB9C1BA0EF9F00C7C053 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,14 +396,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CCF4EBA31BA0EF9F00C7C053 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CCF4EBA41BA0EF9F00C7C053 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CCF4EBA81BA0EF9F00C7C053 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -357,10 +495,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OGTrain/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CS121.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -369,10 +508,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OGTrain/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CS121.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
