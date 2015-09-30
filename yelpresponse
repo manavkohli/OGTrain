@@ -1,0 +1,372 @@
+(
+        {
+        categories =         (
+                        (
+                Indian,
+                indpak
+            ),
+                        (
+                "Food Delivery Services",
+                fooddeliveryservices
+            )
+        );
+        "display_phone" = "+1-415-968-7262";
+        id = "nani-san-francisco";
+        "image_url" = "http://s3-media4.fl.yelpcdn.com/bphoto/lSfnIGu-K5weioag_HfqcQ/ms.jpg";
+        "is_claimed" = 1;
+        "is_closed" = 0;
+        location =         {
+            address =             (
+            );
+            city = "San Francisco";
+            "country_code" = US;
+            "display_address" =             (
+                SoMa,
+                "San Francisco, CA"
+            );
+            neighborhoods =             (
+                SoMa
+            );
+            "state_code" = CA;
+        };
+        "mobile_url" = "http://m.yelp.com/biz/nani-san-francisco";
+        name = Nani;
+        phone = 4159687262;
+        rating = 5;
+        "rating_img_url" = "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png";
+        "rating_img_url_large" = "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png";
+        "rating_img_url_small" = "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png";
+        "review_count" = 26;
+        "snippet_image_url" = "http://s3-media1.fl.yelpcdn.com/photo/u2xuHi7waJ4THOFaUPYKZQ/ms.jpg";
+        "snippet_text" = "yum yum yum yum yum yum yum yum yum yum yum yum yum yum yum yum yum yum yum yum yum yum yum yum\nso clean. so fresh. so normal.\nrotis - to die for!\nI ordered...";
+        url = "http://www.yelp.com/biz/nani-san-francisco";
+    },
+        {
+        categories =         (
+                        (
+                Seafood,
+                seafood
+            ),
+                        (
+                "American (Traditional)",
+                tradamerican
+            ),
+                        (
+                "Breakfast & Brunch",
+                "breakfast_brunch"
+            )
+        );
+        "display_phone" = "+1-415-826-4880";
+        id = "the-old-clam-house-san-francisco";
+        "image_url" = "http://s3-media1.fl.yelpcdn.com/bphoto/XD4b8uhfErlZd-_GishRTA/ms.jpg";
+        "is_claimed" = 1;
+        "is_closed" = 0;
+        location =         {
+            address =             (
+                "299 Bayshore Blvd"
+            );
+            city = "San Francisco";
+            coordinate =             {
+                latitude = "37.7749295";
+                longitude = "-122.4194155";
+            };
+            "country_code" = US;
+            "display_address" =             (
+                "299 Bayshore Blvd",
+                SoMa,
+                "San Francisco, CA 94124"
+            );
+            "geo_accuracy" = "9.5";
+            neighborhoods =             (
+                SoMa
+            );
+            "postal_code" = 94124;
+            "state_code" = CA;
+        };
+        "mobile_url" = "http://m.yelp.com/biz/the-old-clam-house-san-francisco";
+        name = "The Old Clam House";
+        phone = 4158264880;
+        rating = "3.5";
+        "rating_img_url" = "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png";
+        "rating_img_url_large" = "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png";
+        "rating_img_url_small" = "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png";
+        "review_count" = 514;
+        "snippet_image_url" = "http://s3-media1.fl.yelpcdn.com/photo/ftP4AS9o4XLjlDzWHEPfMg/ms.jpg";
+        "snippet_text" = "**Before I go any further please make sure you use Google Maps for the directions, not the Yelp directions listed. The directions listed will take you to...";
+        url = "http://www.yelp.com/biz/the-old-clam-house-san-francisco";
+    },
+        {
+        categories =         (
+                        (
+                "Food Stands",
+                foodstands
+            ),
+                        (
+                Polish,
+                polish
+            )
+        );
+        id = "pierogisf-san-francisco";
+        "image_url" = "http://s3-media2.fl.yelpcdn.com/bphoto/EFsFoJzHEudJ8qWjEFuhCQ/ms.jpg";
+        "is_claimed" = 1;
+        "is_closed" = 0;
+        location =         {
+            address =             (
+            );
+            city = "San Francisco";
+            coordinate =             {
+                latitude = "37.7749295";
+                longitude = "-122.4194155";
+            };
+            "country_code" = US;
+            "display_address" =             (
+                SoMa,
+                "San Francisco, CA"
+            );
+            "geo_accuracy" = "9.5";
+            neighborhoods =             (
+                SoMa
+            );
+            "state_code" = CA;
+        };
+        "mobile_url" = "http://m.yelp.com/biz/pierogisf-san-francisco";
+        name = PierogiSF;
+        rating = 5;
+        "rating_img_url" = "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png";
+        "rating_img_url_large" = "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png";
+        "rating_img_url_small" = "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png";
+        "review_count" = 1;
+        "snippet_image_url" = "http://s3-media4.fl.yelpcdn.com/photo/QF-DYRWh_ZsMg3C-0VtbUA/ms.jpg";
+        "snippet_text" = "Pierogi - a small dough envelope filled with mashed potato, meat, cheese, or vegetables, crimped to seal the edge and then boiled or fried, typically served...";
+        url = "http://www.yelp.com/biz/pierogisf-san-francisco";
+    },
+        {
+        categories =         (
+                        (
+                "Food Trucks",
+                foodtrucks
+            ),
+                        (
+                German,
+                german
+            )
+        );
+        "display_phone" = "+1-415-666-6821";
+        id = "little-red-riding-truck-san-francisco";
+        "image_url" = "http://s3-media1.fl.yelpcdn.com/bphoto/ZaBWBeFL8pOjDKvTFv4AsQ/ms.jpg";
+        "is_claimed" = 1;
+        "is_closed" = 0;
+        location =         {
+            address =             (
+            );
+            city = "San Francisco";
+            coordinate =             {
+                latitude = "37.7749295";
+                longitude = "-122.4194155";
+            };
+            "country_code" = US;
+            "display_address" =             (
+                SoMa,
+                "San Francisco, CA"
+            );
+            "geo_accuracy" = "9.5";
+            neighborhoods =             (
+                SoMa
+            );
+            "state_code" = CA;
+        };
+        "mobile_url" = "http://m.yelp.com/biz/little-red-riding-truck-san-francisco";
+        name = "Little Red Riding Truck";
+        phone = 4156666821;
+        rating = 4;
+        "rating_img_url" = "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png";
+        "rating_img_url_large" = "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png";
+        "rating_img_url_small" = "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png";
+        "review_count" = 50;
+        "snippet_image_url" = "http://s3-media3.fl.yelpcdn.com/photo/1T0BJysi5FR5PbsAdyMF3A/ms.jpg";
+        "snippet_text" = "Little Red Riding Truck was one of the trucks at the Fremont Friday Food Truck gathering. The truck has an adorable cartoon design depicting Little Red...";
+        url = "http://www.yelp.com/biz/little-red-riding-truck-san-francisco";
+    },
+        {
+        categories =         (
+                        (
+                Japanese,
+                japanese
+            ),
+                        (
+                "Sushi Bars",
+                sushi
+            ),
+                        (
+                "Food Trucks",
+                foodtrucks
+            )
+        );
+        "display_phone" = "+1-415-706-5933";
+        id = "we-sushi-san-francisco";
+        "image_url" = "http://s3-media3.fl.yelpcdn.com/bphoto/Zw0LIXZUdC3lc43Q9dMI8A/ms.jpg";
+        "is_claimed" = 1;
+        "is_closed" = 0;
+        location =         {
+            address =             (
+            );
+            city = "San Francisco";
+            "country_code" = US;
+            "display_address" =             (
+                SoMa,
+                "San Francisco, CA"
+            );
+            neighborhoods =             (
+                SoMa
+            );
+            "state_code" = CA;
+        };
+        "mobile_url" = "http://m.yelp.com/biz/we-sushi-san-francisco";
+        name = "We Sushi";
+        phone = 4157065933;
+        rating = "3.5";
+        "rating_img_url" = "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/5ef3eb3cb162/ico/stars/v1/stars_3_half.png";
+        "rating_img_url_large" = "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/bd9b7a815d1b/ico/stars/v1/stars_large_3_half.png";
+        "rating_img_url_small" = "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/2e909d5d3536/ico/stars/v1/stars_small_3_half.png";
+        "review_count" = 159;
+        "snippet_image_url" = "http://s3-media2.fl.yelpcdn.com/photo/aqOmbUSFsx9FApPOHP6WGQ/ms.jpg";
+        "snippet_text" = "It's kinda hard for me to give We Sushi a solid rating because every time I visit them, they're almost always out of something that I want on their menu....";
+        url = "http://www.yelp.com/biz/we-sushi-san-francisco";
+    },
+        {
+        categories =         (
+                        (
+                Musicians,
+                musicians
+            ),
+                        (
+                "Jazz & Blues",
+                jazzandblues
+            )
+        );
+        "display_phone" = "+1-415-756-2608";
+        id = "i-j-smith-jazz-combo-san-francisco";
+        "image_url" = "http://s3-media2.fl.yelpcdn.com/bphoto/_UiZ0TdKqE0AeNq53T5--A/ms.jpg";
+        "is_claimed" = 1;
+        "is_closed" = 0;
+        location =         {
+            address =             (
+            );
+            city = "San Francisco";
+            coordinate =             {
+                latitude = "37.7749295";
+                longitude = "-122.4194155";
+            };
+            "country_code" = US;
+            "display_address" =             (
+                SoMa,
+                "San Francisco, CA"
+            );
+            "geo_accuracy" = "9.5";
+            neighborhoods =             (
+                SoMa
+            );
+            "state_code" = CA;
+        };
+        "mobile_url" = "http://m.yelp.com/biz/i-j-smith-jazz-combo-san-francisco";
+        name = "I J Smith Jazz Combo";
+        phone = 4157562608;
+        rating = 5;
+        "rating_img_url" = "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png";
+        "rating_img_url_large" = "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/22affc4e6c38/ico/stars/v1/stars_large_5.png";
+        "rating_img_url_small" = "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png";
+        "review_count" = 6;
+        "snippet_image_url" = "http://s3-media4.fl.yelpcdn.com/assets/srv0/yelp_styleguide/cc4afe21892e/assets/img/default_avatars/user_medium_square.png";
+        "snippet_text" = "This band is perfection.\n\nI contacted them based on the samples on their website and chose them based on their professionalism.  Long story short they were...";
+        url = "http://www.yelp.com/biz/i-j-smith-jazz-combo-san-francisco";
+    },
+        {
+        categories =         (
+                        (
+                Sandwiches,
+                sandwiches
+            ),
+                        (
+                "Asian Fusion",
+                asianfusion
+            ),
+                        (
+                "Food Trucks",
+                foodtrucks
+            )
+        );
+        "display_phone" = "+1-415-307-8844";
+        id = "adams-grub-truck-san-francisco-2";
+        "image_url" = "http://s3-media3.fl.yelpcdn.com/bphoto/iTM6fm1iv_nw-aHSnOEy8w/ms.jpg";
+        "is_claimed" = 1;
+        "is_closed" = 0;
+        location =         {
+            address =             (
+            );
+            city = "San Francisco";
+            "country_code" = US;
+            "display_address" =             (
+                SoMa,
+                "San Francisco, CA"
+            );
+            neighborhoods =             (
+                SoMa
+            );
+            "state_code" = CA;
+        };
+        "mobile_url" = "http://m.yelp.com/biz/adams-grub-truck-san-francisco-2";
+        name = "Adam's Grub Truck";
+        phone = 4153078844;
+        rating = 4;
+        "rating_img_url" = "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png";
+        "rating_img_url_large" = "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png";
+        "rating_img_url_small" = "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png";
+        "review_count" = 222;
+        "snippet_image_url" = "http://s3-media3.fl.yelpcdn.com/photo/RnkoGFS_jDANEr0xkspQ5A/ms.jpg";
+        "snippet_text" = "Definition of GRUB:\n[gruhb]\n\n(n) - food\n(v) - to supply with food; to eat\n\nReal-life Example:  \nBlaine:  Hey Jamie, where do you wanna go grub? \nJamie:...";
+        url = "http://www.yelp.com/biz/adams-grub-truck-san-francisco-2";
+    },
+        {
+        categories =         (
+                        (
+                "Food Stands",
+                foodstands
+            )
+        );
+        "display_phone" = "+1-415-665-1146";
+        id = "an-the-go-san-francisco";
+        "image_url" = "http://s3-media1.fl.yelpcdn.com/bphoto/JRmlrjiO9fb9PRD8W5y4QA/ms.jpg";
+        "is_claimed" = 0;
+        "is_closed" = 0;
+        location =         {
+            address =             (
+            );
+            city = "San Francisco";
+            coordinate =             {
+                latitude = "37.7771186828613";
+                longitude = "-122.419639587402";
+            };
+            "country_code" = US;
+            "display_address" =             (
+                SoMa,
+                "San Francisco, CA"
+            );
+            "geo_accuracy" = 4;
+            neighborhoods =             (
+                SoMa
+            );
+            "state_code" = CA;
+        };
+        "mobile_url" = "http://m.yelp.com/biz/an-the-go-san-francisco";
+        name = "An The Go";
+        phone = 4156651146;
+        rating = 3;
+        "rating_img_url" = "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/34bc8086841c/ico/stars/v1/stars_3.png";
+        "rating_img_url_large" = "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/e8b5b79d37ed/ico/stars/v1/stars_large_3.png";
+        "rating_img_url_small" = "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/902abeed0983/ico/stars/v1/stars_small_3.png";
+        "review_count" = 319;
+        "snippet_image_url" = "http://s3-media4.fl.yelpcdn.com/photo/C0sXK6puc4DRzaAj4ZIddQ/ms.jpg";
+        "snippet_text" = "Been to this food truck just once and I thought the food was okay. Got the shrimp over garlic noodles. The proportion of noodles to meat could have...";
+        url = "http://www.yelp.com/biz/an-the-go-san-francisco";
+    }
+)
