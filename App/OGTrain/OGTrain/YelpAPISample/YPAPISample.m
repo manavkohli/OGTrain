@@ -30,8 +30,9 @@ static NSString * const kSearchLimit       = @"3";
  */
 
 
-- (void) listResults:(NSString *)term location:(NSString *)location radius:(NSString *)radius results:(NSString *)results category:(NSString*)category completionHandler:(void (^)(NSDictionary *businessArray, NSError *error))completionHandler {
-
+- (void) listResults:(NSString *)term location:(NSString *)location radius:(NSString *)radius results:(NSString *)results category:(NSString*)category completionHandler:(void (^)(NSDictionary *searchResponseJSON, NSError *error))completionHandler {
+    
+    NSMutableArray *restArray = [[NSMutableArray alloc] init];
     
     NSDictionary *params = @{
                              @"term": term,
@@ -58,7 +59,7 @@ static NSString * const kSearchLimit       = @"3";
             NSArray *businessArray = searchResponseJSON[@"businesses"];
             
             //Contains a list of all the restaurants
-            NSMutableArray *restArray = [[NSMutableArray alloc] initWithCapacity: results];
+            
             
             
             for(int i = 0; i < [businessArray count]; i=i+1){
@@ -72,19 +73,12 @@ static NSString * const kSearchLimit       = @"3";
                 
                 
                 NSString *name = businessArray[i][@"name"];
-//                NSString *rating = businessArray[i][@"rating"];
-//                NSString *mobileURL = businessArray[i][@"mobile_url"];
-//                NSString *address = businessArray[i][@"location"][@"address"];
                 
                 //NOTE: some addresses have more info (i.e. lats/longs) than others
                 
                 NSLog(@"%@", name);
                 
-//                NSLog(@"%s", businessArray[i][@"name"]);
             }
-//            //Access the name
-//            NSString *name = businessArray[1][@"name"];
-//            NSLog(@"%@", name);
             
         }
         // response code != 200; there was an error

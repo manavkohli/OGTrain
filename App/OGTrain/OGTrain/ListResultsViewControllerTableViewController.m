@@ -39,11 +39,11 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    [APISample listResults:defaultTerm location:defaultLocation radius:defaultRadius results:defaultNumberOfResults category:defaultCategory completionHandler:^(NSDictionary *topBusinessJSON, NSError *error) {
+    [APISample listResults:defaultTerm location:defaultLocation radius:defaultRadius results:defaultNumberOfResults category:defaultCategory completionHandler:^(NSDictionary *bizJSON, NSError *error) {
         if (error) {
             NSLog(@"An error happened during the request: %@", error);
-        } else if (topBusinessJSON) {
-            NSLog(@"Top business info: \n %@", topBusinessJSON);
+        } else if (bizJSON) {
+            NSLog(@"Top business info: \n %@", bizJSON);
         } else {
             NSLog(@"No business was found");
         }
