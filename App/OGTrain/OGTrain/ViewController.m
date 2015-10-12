@@ -10,11 +10,6 @@
 
 @interface ViewController ()
 
-//MARK: Properties
-@property (weak, nonatomic) IBOutlet UILabel *trainStopLabel;
-
-@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
-
 @end
 
 @implementation ViewController

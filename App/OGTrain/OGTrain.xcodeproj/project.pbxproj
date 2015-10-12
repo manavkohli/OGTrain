@@ -14,6 +14,7 @@
 		CCF4EBA71BA0EF9F00C7C053 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF4EBA61BA0EF9F00C7C053 /* Images.xcassets */; };
 		CCF4EBAA1BA0EF9F00C7C053 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCF4EBA81BA0EF9F00C7C053 /* LaunchScreen.xib */; };
 		CCF4EBB61BA0EF9F00C7C053 /* OGTrainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF4EBB51BA0EF9F00C7C053 /* OGTrainTests.m */; };
+		D94B0E701BAF6CBB006B9ACC /* BusinessTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D94B0E6F1BAF6CBB006B9ACC /* BusinessTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		CCF4EBAF1BA0EF9F00C7C053 /* OGTrainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OGTrainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCF4EBB41BA0EF9F00C7C053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCF4EBB51BA0EF9F00C7C053 /* OGTrainTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OGTrainTests.m; sourceTree = "<group>"; };
+		D94B0E6E1BAF6CBB006B9ACC /* BusinessTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessTableViewCell.h; sourceTree = "<group>"; };
+		D94B0E6F1BAF6CBB006B9ACC /* BusinessTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				CCF4EBA01BA0EF9F00C7C053 /* ViewController.h */,
 				CCF4EBA11BA0EF9F00C7C053 /* ViewController.m */,
 				CCF4EBA31BA0EF9F00C7C053 /* Main.storyboard */,
+				D94B0E6E1BAF6CBB006B9ACC /* BusinessTableViewCell.h */,
+				D94B0E6F1BAF6CBB006B9ACC /* BusinessTableViewCell.m */,
 				CCF4EBA61BA0EF9F00C7C053 /* Images.xcassets */,
 				CCF4EBA81BA0EF9F00C7C053 /* LaunchScreen.xib */,
 				CCF4EB991BA0EF9F00C7C053 /* Supporting Files */,
@@ -221,6 +226,7 @@
 			files = (
 				CCF4EBA21BA0EF9F00C7C053 /* ViewController.m in Sources */,
 				CCF4EB9F1BA0EF9F00C7C053 /* AppDelegate.m in Sources */,
+				D94B0E701BAF6CBB006B9ACC /* BusinessTableViewCell.m in Sources */,
 				CCF4EB9C1BA0EF9F00C7C053 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
