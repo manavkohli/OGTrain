@@ -5,6 +5,7 @@
 #import "YPAPISample.h"
 #import <Foundation/Foundation.h>
 
+
 /**
  Default paths and search terms used in this example
  */
@@ -41,6 +42,8 @@ static NSString * const kSearchLimit       = @"3";
                              @"radius_filter": radius,
                              @"category": category
                              };
+    
+
     
     //Send the request and start the session
     NSURLRequest* searchRequest = [NSURLRequest requestWithHost:kAPIHost path:kSearchPath params:params];
