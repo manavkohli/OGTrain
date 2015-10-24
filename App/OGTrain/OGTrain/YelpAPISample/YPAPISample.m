@@ -31,7 +31,7 @@ static NSString * const kSearchLimit       = @"3";
  */
 
 
-- (void) listResults:(NSString *)term location:(NSString *)location radius:(NSString *)radius results:(NSString *)results category:(NSString*)category completionHandler:(void (^)(NSDictionary *searchResponseJSON, NSError *error))completionHandler {
+- (void) listResults:(NSString *)term location:(NSString *)location radius:(NSString *)radius results:(NSString *)results category:(NSString*)category completionHandler:(void (^)(NSArray *bizResults,NSDictionary *searchResponseJSON, NSError *error))completionHandler {
     
     NSMutableArray *restArray = [[NSMutableArray alloc] init];
     
@@ -51,20 +51,16 @@ static NSString * const kSearchLimit       = @"3";
 
     //Handle the request
     [[session dataTaskWithRequest:searchRequest completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-        
+         [[NSArray alloc] init];
         NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
         
         // Request went through
         if (!error && httpResponse.statusCode == 200) {
             
-            
             NSDictionary *searchResponseJSON = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
             NSArray *businessArray = searchResponseJSON[@"businesses"];
             
             //Contains a list of all the restaurants
-            
-            
-            
             for(int i = 0; i < [businessArray count]; i=i+1){
                 NSMutableArray *restResults = [[NSMutableArray alloc] initWithCapacity: 4];
                 [restResults insertObject:businessArray[i][@"name"] atIndex:0];
@@ -73,20 +69,16 @@ static NSString * const kSearchLimit       = @"3";
                 [restResults insertObject:businessArray[i][@"location"][@"address"] atIndex:3];
                 [restArray  insertObject:restResults atIndex:i];
                 
-                
-                
-                NSString *name = businessArray[i][@"name"];
-                
-                //NOTE: some addresses have more info (i.e. lats/longs) than others
-                
-                NSLog(@"%@", name);
+//                NSString *name = businessArray[i][@"name"];
+//                NSLog(@"Name: %@", name);
                 
             }
-            
+        //return the array with the business information
+        completionHandler(restArray, nil, error);
         }
         // response code != 200; there was an error
         else {
-            completionHandler(nil, error);
+            completionHandler(restArray, nil, error);
         }
     }] resume];
     
