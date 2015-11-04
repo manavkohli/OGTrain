@@ -76,7 +76,6 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     [self performSegueWithIdentifier:@"kToDetailViewSegue" sender:self];
 }
 
