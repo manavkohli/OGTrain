@@ -39,7 +39,7 @@
     NSString *defaultTerm = @"dinner";
     NSString *defaultLocation = @"San Francisco, CA";
     NSString *defaultRadius = @"2";
-    NSString *defaultNumberOfResults = @"8";
+    NSString *defaultNumberOfResults = @"20";
     NSString *defaultCategory = @"Food";
     
     //TODO: Create method so that you can change these
