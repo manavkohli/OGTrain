@@ -33,6 +33,8 @@
 		CCF4EBA71BA0EF9F00C7C053 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF4EBA61BA0EF9F00C7C053 /* Images.xcassets */; };
 		CCF4EBAA1BA0EF9F00C7C053 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCF4EBA81BA0EF9F00C7C053 /* LaunchScreen.xib */; };
 		CCF4EBB61BA0EF9F00C7C053 /* OGTrainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF4EBB51BA0EF9F00C7C053 /* OGTrainTests.m */; };
+		D9D8B8671BE9D5D80043C1F4 /* DetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D8B8661BE9D5D80043C1F4 /* DetailView.m */; };
+		D9D8B86A1BE9D8C00043C1F4 /* Business.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D8B8691BE9D8C00043C1F4 /* Business.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,10 @@
 		CCF4EBAF1BA0EF9F00C7C053 /* OGTrainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OGTrainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCF4EBB41BA0EF9F00C7C053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCF4EBB51BA0EF9F00C7C053 /* OGTrainTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OGTrainTests.m; sourceTree = "<group>"; };
+		D9D8B8651BE9D5D80043C1F4 /* DetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailView.h; sourceTree = "<group>"; };
+		D9D8B8661BE9D5D80043C1F4 /* DetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailView.m; sourceTree = "<group>"; };
+		D9D8B8681BE9D8C00043C1F4 /* Business.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Business.h; sourceTree = "<group>"; };
+		D9D8B8691BE9D8C00043C1F4 /* Business.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Business.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,8 +222,12 @@
 				CC62909A1BAF5DF10016D6B5 /* YelpAPISample */,
 				CCF4EB9D1BA0EF9F00C7C053 /* AppDelegate.h */,
 				CCF4EB9E1BA0EF9F00C7C053 /* AppDelegate.m */,
+				D9D8B8651BE9D5D80043C1F4 /* DetailView.h */,
+				D9D8B8661BE9D5D80043C1F4 /* DetailView.m */,
 				CC40BF721BACADFA009C38FA /* ListResultsViewControllerTableViewController.h */,
 				CC40BF731BACADFA009C38FA /* ListResultsViewControllerTableViewController.m */,
+				D9D8B8681BE9D8C00043C1F4 /* Business.h */,
+				D9D8B8691BE9D8C00043C1F4 /* Business.m */,
 				CC62908A1BAF4E5E0016D6B5 /* Storyboard.storyboard */,
 				CCF4EBA61BA0EF9F00C7C053 /* Images.xcassets */,
 				CCF4EBA81BA0EF9F00C7C053 /* LaunchScreen.xib */,
@@ -361,6 +371,7 @@
 				CC6290CD1BAF5DF10016D6B5 /* Base64Transcoder.c in Sources */,
 				CC6290D41BAF5DF10016D6B5 /* OAMutableURLRequest.m in Sources */,
 				CC40BF741BACADFA009C38FA /* ListResultsViewControllerTableViewController.m in Sources */,
+				D9D8B86A1BE9D8C00043C1F4 /* Business.m in Sources */,
 				CC6290D71BAF5DF10016D6B5 /* OARequestParameter.m in Sources */,
 				CC6290CE1BAF5DF10016D6B5 /* hmac.c in Sources */,
 				CC6290D91BAF5DF10016D6B5 /* OAToken.m in Sources */,
@@ -371,6 +382,7 @@
 				CC6290D11BAF5DF10016D6B5 /* OAConsumer.m in Sources */,
 				CC6290D31BAF5DF10016D6B5 /* OAHMAC_SHA1SignatureProvider.m in Sources */,
 				CCF4EB9F1BA0EF9F00C7C053 /* AppDelegate.m in Sources */,
+				D9D8B8671BE9D5D80043C1F4 /* DetailView.m in Sources */,
 				CC6290C91BAF5DF10016D6B5 /* NSURLRequest+OAuth.m in Sources */,
 				CC6290CB1BAF5DF10016D6B5 /* NSString+URLEncoding.m in Sources */,
 				CCF4EB9C1BA0EF9F00C7C053 /* main.m in Sources */,
