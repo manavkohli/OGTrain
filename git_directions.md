@@ -52,7 +52,7 @@ Pulls the changes from master
 `$ git fetch`	
 
 Adds changes to master into branch			 	
-`$ git rebase`
+`$ git rebase origin/master`
 
 Merge your branch into master							
 `$ git push origin <branch_name>:master` 	
