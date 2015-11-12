@@ -18,11 +18,18 @@
 
 @implementation ListResultsViewControllerTableViewController
 
+-(void) loadView {
+//    [super loadView];
+    [self populateTable];
+    [super loadView];
+}
+
 - (void)viewDidLoad {
     //list to hold the names of ther restaurants
     self.restaurantNames = [[NSMutableArray alloc] init];
+    
     [super viewDidLoad];
-    [self populateTable];
+    
 
     
     
