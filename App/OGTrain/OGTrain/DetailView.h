@@ -10,6 +10,4 @@
 
 @interface DetailView : UITableViewController
 
-
-
 @end

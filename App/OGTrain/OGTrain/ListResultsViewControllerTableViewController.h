@@ -10,4 +10,5 @@
 
 @interface ListResultsViewControllerTableViewController : UITableViewController
 @property (strong, nonatomic) NSArray *bizResults;
+@property (strong, nonatomic) NSDictionary *searchItems;
 @end

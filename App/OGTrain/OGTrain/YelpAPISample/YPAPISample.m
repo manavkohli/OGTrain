@@ -31,10 +31,9 @@ static NSString * const kSearchLimit       = @"3";
  */
 
 
-- (void) listResults:(NSString *)term location:(NSString *)location radius:(NSString *)radius results:(NSString *)results category:(NSString*)category completionHandler:(void (^)(NSArray *bizResults, NSError *error))completionHandler {
+- (void) listResults:(NSString *)location radius:(NSString *)radius results:(NSString *)results category:(NSString*)category completionHandler:(void (^)(NSArray *bizResults, NSError *error))completionHandler {
     
     NSDictionary *params = @{
-                             @"term": term,
                              @"location": location,
                              @"limit": results,
                              @"radius_filter": radius,
@@ -63,6 +62,7 @@ static NSString * const kSearchLimit       = @"3";
         }
         // response code != 200; there was an error
         else {
+            NSLog(@"fuck you");
             completionHandler(nil, error);
         }
     }] resume];

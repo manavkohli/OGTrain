@@ -24,6 +24,7 @@
 
 -(void) loadView {
 //    [super loadView];
+    [self.navigationItem setTitle:@"Stop 'N 'Go!"];
     [self populateTable];
     [super loadView];
 }
@@ -37,34 +38,22 @@
     
     [super viewDidLoad];
     
-
-    
-    
-//    [button addTarget:self
-//               action:@selector(aMethod:)
-//    forControlEvents:UIControlEventTouchUpInside];
-//    [button setTitle:@"Show View" forState:UIControlStateNormal];
-//    button.frame = CGRectMake(80.0, 210.0, 160.0, 40.0);
-//    [table addSubview:button];
 }
 
 - (void)populateTable {
     //default search information
-    NSString *defaultTerm = @"dinner";
     NSString *defaultLocation = @"San Francisco, CA";
     NSString *defaultRadius = @"2";
     NSString *defaultNumberOfResults = @"20";
     NSString *defaultCategory = @"Food";
     
-    //TODO: Create method so that you can change these
-    
+    NSLog(@"baaalin %@", self.searchItems);
     YPAPISample *YelpAPI = [[YPAPISample alloc] init];
     
-    [YelpAPI listResults:defaultTerm
-                location:defaultLocation
-                  radius:defaultRadius
-                 results:defaultNumberOfResults
-                category:defaultCategory
+    [YelpAPI    listResults:self.searchItems[@"end"]
+                radius:self.searchItems[@"radius"]
+                results:defaultNumberOfResults
+                category:self.searchItems[@"good"]
        completionHandler:^(NSArray *bizArray, NSError *error) {
            
            if (error) {
@@ -77,9 +66,6 @@
                    [self.restaurantNames addObject:bizArray[i][@"name"]];
                    
                }
-               NSLog(@"in call block");
-               NSLog(@"Name List: \n %@", self.restaurantNames);
-               NSLog(@"Category List: \n %@", self.category);
                [self.tableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:YES];
                
            } else {
@@ -88,9 +74,6 @@
            }
            
        }];
-    NSLog(@"after call block");
-    NSLog(@"Name List: \n %@", self.restaurantNames);
-    NSLog(@"Category List: \n %@", self.category);
     
 }
 
