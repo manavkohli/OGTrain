@@ -13,6 +13,8 @@
 @interface DetailInfo ()
 
 @property (nonatomic, strong) NSMutableArray *business;
+@property (nonatomic, strong) NSArray *categoryIndices;
+@property (nonatomic, strong) NSDictionary *yelpInfo;
 
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSNumber * phone;
@@ -33,8 +35,15 @@
 
 - (void)viewDidLoad {
     
-    
     [super viewDidLoad];
+    
+    self.categoryIndices = @[
+                             @"Name",
+                             @"Rating",
+                             @"Is Closed",
+                             @"Phone",
+                             @"Category"
+                            ];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -71,15 +80,32 @@
     
     cell.textLabel.text = self.business[indexPath.row];
     
+    if ([self.categoryIndices[indexPath.row] isEqual:@"Is Closed"]) {
+        if ([self.business[indexPath.row] isEqual:@"Open"]) {
+            cell.textLabel.textColor = [UIColor greenColor];
+        }
+        else {
+            cell.textLabel.textColor = [UIColor redColor];
+        }
+    }
+    
+    if ([self.categoryIndices[indexPath.row] isEqual:@"Phone"]) {
+        if (self.yelpInfo[@"phone"] == nil) {
+            cell.textLabel.text = @"Phone: Not Available";
+        }
+    }
+    
     return cell;
 }
 
-- (void) setInformation:(NSDictionary *)yelpInfo{
+- (void) setInformation:(NSDictionary *)yelpInfo {
 //    NSLog(@"this the dictionary BIOTCH %@", yelpInfo);
     self.business = [NSMutableArray arrayWithArray:@[@"Name: ", @"Rating: ", @"Is Closed: ", @"Phone: ", @"Category:"]];
+    self.yelpInfo = yelpInfo;
+    
     self.business[0] = [NSString stringWithFormat:@"%@ %@", self.business[0], yelpInfo[@"name"]];
     self.business[1] = [NSString stringWithFormat:@"%@ %@", self.business[1], yelpInfo[@"rating"]];
-    self.business[2] = [NSString stringWithFormat:@"%@ %@", self.business[2], yelpInfo[@"is_closed"]];
+    self.business[2] = [yelpInfo[@"is_closed"] intValue] == 0 ? @"Open" : @"Closed";
     self.business[3] = [NSString stringWithFormat:@"%@ %@", self.business[3], yelpInfo[@"display_phone"]];
     self.business[4] = [NSString stringWithFormat:@"%@ %@", self.business[4], yelpInfo[@"categories"][0][0]];
     NSLog(@"DIZ BIZNESS %@", self.business);

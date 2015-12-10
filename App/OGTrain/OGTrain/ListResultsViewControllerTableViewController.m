@@ -79,7 +79,7 @@
                NSLog(@"in call block");
                NSLog(@"Name List: \n %@", self.restaurantNames);
                NSLog(@"Category List: \n %@", self.category);
-               [self.tableView reloadData];
+               [self.tableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:YES];
                
            } else {
                NSLog(@"No business was found");
