@@ -62,23 +62,33 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return [self.business count];
 }
 
-
+- (double)tableView:(UITableView *)tableView heightForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    
+    if (indexPath.row == 0) {
+        return 70;
+    }
+    
+    return 30;
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseIdentifier" forIndexPath:indexPath];
     
     cell.textLabel.text = self.business[indexPath.row];
+    
+    if ([self.categoryIndices[indexPath.row] isEqual:@"Name"]) {
+        cell.textLabel.font = [UIFont boldSystemFontOfSize:24];
+    }
     
     if ([self.categoryIndices[indexPath.row] isEqual:@"Is Closed"]) {
         if ([self.business[indexPath.row] isEqual:@"Open"]) {
@@ -88,27 +98,45 @@
             cell.textLabel.textColor = [UIColor redColor];
         }
     }
-    
+    if ([self.categoryIndices[indexPath.row] isEqual:@"Rating"]) {
+        cell.textLabel.text = @"";
+        NSURL *url = [NSURL URLWithString:self.business[indexPath.row]];
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        UIImage *img = [[UIImage alloc] initWithData:data];
+        cell.imageView.image = img;
+    }
     if ([self.categoryIndices[indexPath.row] isEqual:@"Phone"]) {
-        if (self.yelpInfo[@"phone"] == nil) {
+        if ([self.business[indexPath.row] isEqual:@""]) {
             cell.textLabel.text = @"Phone: Not Available";
+        }
+        else {
+            cell.textLabel.userInteractionEnabled = YES;
+            UITapGestureRecognizer *tapGesture =
+            [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(phoneNumberLabelTap:)];
+            [cell.textLabel addGestureRecognizer:tapGesture];
         }
     }
     
     return cell;
 }
 
+-(void)phoneNumberLabelTap:(UIGestureRecognizer *)sender
+{
+    NSString *number = ((UILabel *)sender.view).text;
+    NSURL *phoneUrl = [NSURL URLWithString:[NSString stringWithFormat:@"telprompt:%@",number]];
+    [[UIApplication sharedApplication] openURL:phoneUrl];
+}
+
 - (void) setInformation:(NSDictionary *)yelpInfo {
 //    NSLog(@"this the dictionary BIOTCH %@", yelpInfo);
-    self.business = [NSMutableArray arrayWithArray:@[@"Name: ", @"Rating: ", @"Is Closed: ", @"Phone: ", @"Category:"]];
+    self.business = [NSMutableArray new];
     self.yelpInfo = yelpInfo;
     
-    self.business[0] = [NSString stringWithFormat:@"%@ %@", self.business[0], yelpInfo[@"name"]];
-    self.business[1] = [NSString stringWithFormat:@"%@ %@", self.business[1], yelpInfo[@"rating"]];
-    self.business[2] = [yelpInfo[@"is_closed"] intValue] == 0 ? @"Open" : @"Closed";
-    self.business[3] = [NSString stringWithFormat:@"%@ %@", self.business[3], yelpInfo[@"display_phone"]];
-    self.business[4] = [NSString stringWithFormat:@"%@ %@", self.business[4], yelpInfo[@"categories"][0][0]];
-    [self.tableView reloadData];
+    [self.business addObject:yelpInfo[@"name"]];
+    [self.business addObject:yelpInfo[@"rating_img_url"] ];
+    [self.business addObject:[yelpInfo[@"is_closed"] intValue] == 0 ? @"Open" : @"Closed"];
+    [self.business addObject:yelpInfo[@"display_phone"] ?: @""];
+    [self.business addObject:yelpInfo[@"categories"][0][0]];
 }
 
 
