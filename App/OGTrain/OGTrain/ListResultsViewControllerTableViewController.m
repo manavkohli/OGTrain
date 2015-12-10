@@ -9,6 +9,7 @@
 #import "ListResultsViewControllerTableViewController.h"
 #import "DetailInfo.h"
 #import "YelpAPISample/YPAPISample.h"
+#import "ResultsTableCell.h"
 
 @interface ListResultsViewControllerTableViewController ()
 
@@ -79,9 +80,9 @@
                NSLog(@"in call block");
                NSLog(@"Name List: \n %@", self.restaurantNames);
                NSLog(@"Category List: \n %@", self.category);
-               [self.tableView reloadData];
-               
-           } else {
+               [self.tableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:YES];
+            }
+            else {
                NSLog(@"No business was found");
            }
            
@@ -89,6 +90,7 @@
     NSLog(@"after call block");
     NSLog(@"Name List: \n %@", self.restaurantNames);
     NSLog(@"Category List: \n %@", self.category);
+    
 }
 
 
@@ -121,20 +123,28 @@
     [self performSegueWithIdentifier:@"detailSegue" sender:indexPath];
 }
 
+
+
 //Defines what to display in each row
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    static NSString *simpleTbIdent = @"SimpleTableCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTbIdent];
+    static NSString *simpleTbIdent = @"ResultsTableCell";
+    ResultsTableCell *cell = (ResultsTableCell *)[tableView dequeueReusableCellWithIdentifier:simpleTbIdent];
     if(cell == nil){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTbIdent];
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTbIdent];
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ResultsTableCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
     }
 
     //Configure the cell
-    cell.textLabel.text = self.bizResults[indexPath.row][@"name"];
+    cell.nameLabel.text = self.bizResults[indexPath.row][@"name"];
+    cell.categoryLabel.text = self.bizResults[indexPath.row][@"categories"][0][0];
 //    cell.detailTextLabel.text = self.category[indexPath.row];
     return cell;
 }
+
+
+
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 
@@ -142,5 +152,10 @@
     return @"Results";
 }
 
+//specify table cell height
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 75;
+}
 
 @end

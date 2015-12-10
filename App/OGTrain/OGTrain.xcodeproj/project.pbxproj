@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		CC40BF741BACADFA009C38FA /* ListResultsViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC40BF731BACADFA009C38FA /* ListResultsViewControllerTableViewController.m */; };
 		CC452A271C195E4200A6FB65 /* DetailInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CC452A261C195E4200A6FB65 /* DetailInfo.m */; };
+		CC452A291C1979E500A6FB65 /* ResultsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC452A281C1979E500A6FB65 /* ResultsTableCell.xib */; };
+		CC452A2C1C197D3B00A6FB65 /* ResultsTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC452A2B1C197D3B00A6FB65 /* ResultsTableCell.m */; };
 		CC62908B1BAF4E5E0016D6B5 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC62908A1BAF4E5E0016D6B5 /* Storyboard.storyboard */; };
 		CC6290C91BAF5DF10016D6B5 /* NSURLRequest+OAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = CC62909D1BAF5DF10016D6B5 /* NSURLRequest+OAuth.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CC6290CA1BAF5DF10016D6B5 /* NSMutableURLRequest+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6290A11BAF5DF10016D6B5 /* NSMutableURLRequest+Parameters.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -53,6 +55,9 @@
 		CC40BF731BACADFA009C38FA /* ListResultsViewControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListResultsViewControllerTableViewController.m; sourceTree = "<group>"; };
 		CC452A251C195E4200A6FB65 /* DetailInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailInfo.h; sourceTree = "<group>"; };
 		CC452A261C195E4200A6FB65 /* DetailInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailInfo.m; sourceTree = "<group>"; };
+		CC452A281C1979E500A6FB65 /* ResultsTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultsTableCell.xib; sourceTree = "<group>"; };
+		CC452A2A1C197D3B00A6FB65 /* ResultsTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsTableCell.h; sourceTree = "<group>"; };
+		CC452A2B1C197D3B00A6FB65 /* ResultsTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsTableCell.m; sourceTree = "<group>"; };
 		CC62908A1BAF4E5E0016D6B5 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		CC62909C1BAF5DF10016D6B5 /* NSURLRequest+OAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+OAuth.h"; sourceTree = "<group>"; };
 		CC62909D1BAF5DF10016D6B5 /* NSURLRequest+OAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+OAuth.m"; sourceTree = "<group>"; };
@@ -237,6 +242,9 @@
 				CCF4EBA61BA0EF9F00C7C053 /* Images.xcassets */,
 				CCF4EBA81BA0EF9F00C7C053 /* LaunchScreen.xib */,
 				CCF4EB991BA0EF9F00C7C053 /* Supporting Files */,
+				CC452A281C1979E500A6FB65 /* ResultsTableCell.xib */,
+				CC452A2A1C197D3B00A6FB65 /* ResultsTableCell.h */,
+				CC452A2B1C197D3B00A6FB65 /* ResultsTableCell.m */,
 			);
 			path = OGTrain;
 			sourceTree = "<group>";
@@ -350,6 +358,7 @@
 				CCF4EBAA1BA0EF9F00C7C053 /* LaunchScreen.xib in Resources */,
 				CCF4EBA71BA0EF9F00C7C053 /* Images.xcassets in Resources */,
 				CC62908B1BAF4E5E0016D6B5 /* Storyboard.storyboard in Resources */,
+				CC452A291C1979E500A6FB65 /* ResultsTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +391,7 @@
 				CC6290D91BAF5DF10016D6B5 /* OAToken.m in Sources */,
 				CC6290CA1BAF5DF10016D6B5 /* NSMutableURLRequest+Parameters.m in Sources */,
 				CC452A271C195E4200A6FB65 /* DetailInfo.m in Sources */,
+				CC452A2C1C197D3B00A6FB65 /* ResultsTableCell.m in Sources */,
 				CC6290D81BAF5DF10016D6B5 /* OAServiceTicket.m in Sources */,
 				CC6290D21BAF5DF10016D6B5 /* OADataFetcher.m in Sources */,
 				CC6290D61BAF5DF10016D6B5 /* OAProblem.m in Sources */,
