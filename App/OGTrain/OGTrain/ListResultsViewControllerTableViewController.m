@@ -13,6 +13,8 @@
 
 @property (nonatomic, strong) NSArray *results;
 @property (nonatomic, strong) NSMutableArray *restaurantNames;
+@property (nonatomic, strong) NSMutableArray *category;
+@property (nonatomic, strong) NSMutableArray *rating;
 
 @end
 
@@ -27,6 +29,9 @@
 - (void)viewDidLoad {
     //list to hold the names of ther restaurants
     self.restaurantNames = [[NSMutableArray alloc] init];
+    self.category = [[NSMutableArray alloc] init];
+    self.rating = [[NSMutableArray alloc] init];
+    self.bizResults =[[NSMutableArray alloc] init];
     
     [super viewDidLoad];
     
@@ -63,12 +68,16 @@
            if (error) {
                NSLog(@"An error happened during the request: %@", error);
            } else if (bizArray) {
-               //Add al
+               self.bizResults = bizArray;
                for(int i = 0; i < [bizArray count]; i++){
+                   [self.category addObject:bizArray[i][@"categories"][0][0]];
+                   [self.category addObject:bizArray[i][@"rating"]];
                    [self.restaurantNames addObject:bizArray[i][@"name"]];
+                   
                }
                NSLog(@"in call block");
                NSLog(@"Name List: \n %@", self.restaurantNames);
+               NSLog(@"Category List: \n %@", self.category);
                [self.tableView reloadData];
                
            } else {
@@ -78,6 +87,7 @@
        }];
     NSLog(@"after call block");
     NSLog(@"Name List: \n %@", self.restaurantNames);
+    NSLog(@"Category List: \n %@", self.category);
 }
 
 
@@ -100,7 +110,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self performSegueWithIdentifier:@"kToDetailViewSegue" sender:self];
+    [self performSegueWithIdentifier:@"detailSegue" sender:self];
 }
 
 //Defines what to display in each row
@@ -111,9 +121,10 @@
     if(cell == nil){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTbIdent];
     }
-    
+
     //Configure the cell
-    cell.textLabel.text = self.restaurantNames[indexPath.row];
+    cell.textLabel.text = self.bizResults[indexPath.row][@"name"];
+//    cell.detailTextLabel.text = self.category[indexPath.row];
     return cell;
 }
 

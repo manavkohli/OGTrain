@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ListResultsViewControllerTableViewController : UITableViewController
-
+@property (strong, nonatomic) NSArray *bizResults;
 @end

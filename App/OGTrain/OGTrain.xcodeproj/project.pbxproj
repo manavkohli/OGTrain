@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CC40BF741BACADFA009C38FA /* ListResultsViewControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC40BF731BACADFA009C38FA /* ListResultsViewControllerTableViewController.m */; };
+		CC452A271C195E4200A6FB65 /* DetailInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CC452A261C195E4200A6FB65 /* DetailInfo.m */; };
 		CC62908B1BAF4E5E0016D6B5 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC62908A1BAF4E5E0016D6B5 /* Storyboard.storyboard */; };
 		CC6290C91BAF5DF10016D6B5 /* NSURLRequest+OAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = CC62909D1BAF5DF10016D6B5 /* NSURLRequest+OAuth.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CC6290CA1BAF5DF10016D6B5 /* NSMutableURLRequest+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6290A11BAF5DF10016D6B5 /* NSMutableURLRequest+Parameters.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -50,6 +51,8 @@
 /* Begin PBXFileReference section */
 		CC40BF721BACADFA009C38FA /* ListResultsViewControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListResultsViewControllerTableViewController.h; sourceTree = "<group>"; };
 		CC40BF731BACADFA009C38FA /* ListResultsViewControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListResultsViewControllerTableViewController.m; sourceTree = "<group>"; };
+		CC452A251C195E4200A6FB65 /* DetailInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailInfo.h; sourceTree = "<group>"; };
+		CC452A261C195E4200A6FB65 /* DetailInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailInfo.m; sourceTree = "<group>"; };
 		CC62908A1BAF4E5E0016D6B5 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		CC62909C1BAF5DF10016D6B5 /* NSURLRequest+OAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+OAuth.h"; sourceTree = "<group>"; };
 		CC62909D1BAF5DF10016D6B5 /* NSURLRequest+OAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+OAuth.m"; sourceTree = "<group>"; };
@@ -229,6 +232,8 @@
 				D9D8B8681BE9D8C00043C1F4 /* Business.h */,
 				D9D8B8691BE9D8C00043C1F4 /* Business.m */,
 				CC62908A1BAF4E5E0016D6B5 /* Storyboard.storyboard */,
+				CC452A251C195E4200A6FB65 /* DetailInfo.h */,
+				CC452A261C195E4200A6FB65 /* DetailInfo.m */,
 				CCF4EBA61BA0EF9F00C7C053 /* Images.xcassets */,
 				CCF4EBA81BA0EF9F00C7C053 /* LaunchScreen.xib */,
 				CCF4EB991BA0EF9F00C7C053 /* Supporting Files */,
@@ -376,6 +381,7 @@
 				CC6290CE1BAF5DF10016D6B5 /* hmac.c in Sources */,
 				CC6290D91BAF5DF10016D6B5 /* OAToken.m in Sources */,
 				CC6290CA1BAF5DF10016D6B5 /* NSMutableURLRequest+Parameters.m in Sources */,
+				CC452A271C195E4200A6FB65 /* DetailInfo.m in Sources */,
 				CC6290D81BAF5DF10016D6B5 /* OAServiceTicket.m in Sources */,
 				CC6290D21BAF5DF10016D6B5 /* OADataFetcher.m in Sources */,
 				CC6290D61BAF5DF10016D6B5 /* OAProblem.m in Sources */,
