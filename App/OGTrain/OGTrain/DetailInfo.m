@@ -12,15 +12,13 @@
 
 @interface DetailInfo ()
 
-@property (nonatomic, strong) NSDictionary *yelp;
 @property (nonatomic, strong) NSMutableArray *business;
 
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSNumber * phone;
 @property (nonatomic, retain) NSNumber * isClosed;
 @property (nonatomic, retain) NSString * rating;
-
-//@property (nonatomic, retain) NSString * image_url;
+@property (nonatomic, retain) NSString * category;
 //@property (nonatomic, retain) NSNumber * latitude;
 //@property (nonatomic, retain) NSNumber * longitude;
 //@property (nonatomic, retain) NSString * address;
@@ -35,7 +33,6 @@
 
 - (void)viewDidLoad {
     
-    self.business = [NSMutableArray arrayWithArray:@[@"Name: ", @"Rating: ", @"Is Closed: ", @"Phone: "]];
     
     [super viewDidLoad];
 
@@ -64,7 +61,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 4;
+    return [self.business count];
 }
 
 
@@ -75,6 +72,18 @@
     cell.textLabel.text = self.business[indexPath.row];
     
     return cell;
+}
+
+- (void) setInformation:(NSDictionary *)yelpInfo{
+//    NSLog(@"this the dictionary BIOTCH %@", yelpInfo);
+    self.business = [NSMutableArray arrayWithArray:@[@"Name: ", @"Rating: ", @"Is Closed: ", @"Phone: ", @"Category:"]];
+    self.business[0] = [NSString stringWithFormat:@"%@ %@", self.business[0], yelpInfo[@"name"]];
+    self.business[1] = [NSString stringWithFormat:@"%@ %@", self.business[1], yelpInfo[@"rating"]];
+    self.business[2] = [NSString stringWithFormat:@"%@ %@", self.business[2], yelpInfo[@"is_closed"]];
+    self.business[3] = [NSString stringWithFormat:@"%@ %@", self.business[3], yelpInfo[@"display_phone"]];
+    self.business[4] = [NSString stringWithFormat:@"%@ %@", self.business[4], yelpInfo[@"categories"][0][0]];
+    NSLog(@"DIZ BIZNESS %@", self.business);
+    [self.tableView reloadData];
 }
 
 

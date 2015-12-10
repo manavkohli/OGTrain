@@ -7,6 +7,7 @@
 //
 
 #import "ListResultsViewControllerTableViewController.h"
+#import "DetailInfo.h"
 #import "YelpAPISample/YPAPISample.h"
 
 @interface ListResultsViewControllerTableViewController ()
@@ -109,8 +110,15 @@
     return [self.restaurantNames count];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"detailSegue"]) {
+        DetailInfo *detailViewController = segue.destinationViewController;
+        [detailViewController setInformation:self.bizResults[((NSIndexPath *)sender).row]];
+    }
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self performSegueWithIdentifier:@"detailSegue" sender:self];
+    [self performSegueWithIdentifier:@"detailSegue" sender:indexPath];
 }
 
 //Defines what to display in each row

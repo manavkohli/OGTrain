@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface DetailInfo : UITableViewController
+@property (nonatomic, strong) NSDictionary *yelp;
+- (void) setInformation:(NSDictionary *)yelpInfo;
 
 @end
