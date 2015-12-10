@@ -81,8 +81,9 @@
                NSLog(@"Name List: \n %@", self.restaurantNames);
                NSLog(@"Category List: \n %@", self.category);
                [self.tableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:YES];
-            }
-            else {
+               
+           } else {
+
                NSLog(@"No business was found");
            }
            
