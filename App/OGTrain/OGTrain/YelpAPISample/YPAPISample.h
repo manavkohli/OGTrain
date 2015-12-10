@@ -23,6 +23,6 @@
  @param location: The location in which the term should be searched for, e.g: San Francisco, CA
  */
 
-- (void) listResults:(NSString *)term location:(NSString *)location radius:(NSString *)radius results:(NSString *)results category:(NSString*)category completionHandler:(void (^)(NSArray *bizResults, NSDictionary *searchResponseJSON, NSError *error))completionHandler;
+- (void) listResults:(NSString *)term location:(NSString *)location radius:(NSString *)radius results:(NSString *)results category:(NSString*)category completionHandler:(void (^)(NSArray *bizResults, NSError *error))completionHandler;
 
 @end

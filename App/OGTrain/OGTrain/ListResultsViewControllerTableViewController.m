@@ -58,14 +58,14 @@
                   radius:defaultRadius
                  results:defaultNumberOfResults
                 category:defaultCategory
-       completionHandler:^(NSArray *bizArray, NSDictionary *bizJSON, NSError *error) {
+       completionHandler:^(NSArray *bizArray, NSError *error) {
            
            if (error) {
                NSLog(@"An error happened during the request: %@", error);
            } else if (bizArray) {
                //Add al
                for(int i = 0; i < [bizArray count]; i++){
-                   [self.restaurantNames addObject:bizArray[i][0]];
+                   [self.restaurantNames addObject:bizArray[i][@"name"]];
                }
                NSLog(@"in call block");
                NSLog(@"Name List: \n %@", self.restaurantNames);
